@@ -1,0 +1,17 @@
+# ── 不进版本库：你们自己的东西 ──────────────────────────────
+# data/ 里是照片、视频、歌单、头像和回忆正文，backups/ 是它的备份副本。
+# 这个项目从第一天就定好「所有东西只存在自己电脑上」，进库等于把它们交给
+# GitHub 保管 —— 别用 git add -f 把它们捞回来。
+data/
+backups/
+
+# ── 可以重新生成 / 无关紧要 ────────────────────────────────
+# 地图边界（data/geo）随 data/ 一起被挡掉，克隆下来跑一次
+# node tools/fetch-geo.mjs 就会重新下载，README 里写着这步。
+node_modules/
+*.log
+
+# Windows / macOS 的碎片
+Thumbs.db
+Desktop.ini
+.DS_Store
